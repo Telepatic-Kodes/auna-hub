@@ -55,8 +55,8 @@ export default function Footer() {
             className="lg:col-span-1"
           >
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <Heart className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                <Heart className="w-5 h-5 text-gray-900" />
               </div>
               <span className="text-xl font-bold">AUNA</span>
             </div>
@@ -183,7 +183,7 @@ export default function Footer() {
             © {currentYear} AUNA. Todos los derechos reservados.
           </p>
           <p className="text-gray-400 text-sm mt-4 md:mt-0">
-            Desarrollado por <a href="https://aiaiai.consulting" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:text-pink-300">AIAIAI Consulting</a> 2025
+            Desarrollado por <a href="https://aiaiai.consulting" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">AIAIAI Consulting</a> 2025
           </p>
         </motion.div>
       </div>

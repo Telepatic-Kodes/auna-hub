@@ -9,54 +9,39 @@ export default function Features() {
       icon: Heart,
       title: 'Comunidad Inspírate Mujer',
       description: 'Activa un efecto multiplicador de liderazgo femenino y libertad interior desde la sororidad.',
-      color: 'pink',
       target: 'Mujeres'
     },
     {
       icon: Radio,
       title: 'Programa radial "Juntas Podemos"',
       description: 'Fortalece el sentido de comunidad, llega donde no llega lo digital, e inspira transformación intergeneracional.',
-      color: 'purple',
       target: 'Mujeres y sus familias en todo el territorio nacional'
     },
     {
       icon: Plane,
       title: 'Viajes con Propósito',
       description: 'Aumenta el grado de conocimiento y conciencia de los caminos que pueden tomar para impactar positivamente la calidad de vida de millones de familias.',
-      color: 'blue',
       target: 'Líderes Organizacionales'
     },
     {
       icon: Building,
       title: 'Consultoría a Empresas',
       description: 'Visibiliza desigualdades normalizadas y promueve una cultura empresarial inclusiva y corresponsable.',
-      color: 'green',
       target: 'Colaboradoras/es'
     },
     {
       icon: MapPin,
       title: 'Intervención Territorial',
       description: 'Empodera económicamente y culturalmente a mujeres líderes que transforman creencias y estructuras sociales.',
-      color: 'orange',
       target: 'Comunidades'
     },
     {
       icon: Shirt,
       title: 'Viste AÚNA',
       description: 'Genera conciencia visible, conversaciones valientes y un contagio cultural a favor de la equidad de género.',
-      color: 'red',
       target: 'Ciudadanía comprometida con la transformación cultural'
     }
   ]
-
-  const colorClasses = {
-    pink: 'bg-pink-100 text-pink-600 dark:bg-pink-900 dark:text-pink-400',
-    purple: 'bg-purple-100 text-purple-600 dark:bg-purple-900 dark:text-purple-400',
-    blue: 'bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-400',
-    green: 'bg-green-100 text-green-600 dark:bg-green-900 dark:text-green-400',
-    orange: 'bg-orange-100 text-orange-600 dark:bg-orange-900 dark:text-orange-400',
-    red: 'bg-red-100 text-red-600 dark:bg-red-900 dark:text-red-400'
-  }
 
   return (
     <section id="features" className="py-20 bg-gray-50 dark:bg-gray-800">
@@ -88,8 +73,8 @@ export default function Features() {
               viewport={{ once: true }}
               className="card p-6 hover:shadow-xl transition-all duration-300 group"
             >
-              <div className={`w-12 h-12 ${colorClasses[feature.color as keyof typeof colorClasses]} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                <feature.icon className="w-6 h-6" />
+              <div className="w-12 h-12 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <feature.icon className="w-6 h-6 text-gray-600 dark:text-gray-400" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                 {feature.title}

@@ -8,8 +8,8 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-16">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-bounce-gentle"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-bounce-gentle" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gray-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-bounce-gentle"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gray-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-bounce-gentle" style={{ animationDelay: '1s' }}></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -19,7 +19,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="mb-8"
         >
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200 text-sm font-medium mb-6">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200 text-sm font-medium mb-6">
             <Heart className="w-4 h-4 mr-2" />
             El poder transformador está en la unión
           </div>
@@ -69,24 +69,24 @@ export default function Hero() {
           className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
         >
           <div className="card p-6 text-center">
-            <div className="w-12 h-12 bg-pink-100 dark:bg-pink-900 rounded-lg flex items-center justify-center mx-auto mb-4">
-              <Heart className="w-6 h-6 text-pink-600 dark:text-pink-400" />
+            <div className="w-12 h-12 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <Heart className="w-6 h-6 text-gray-600 dark:text-gray-400" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Agente de Cambio</h3>
             <p className="text-gray-600 dark:text-gray-300">Forma parte de un movimiento social que está transformando el panorama cultural, económico y social.</p>
           </div>
 
           <div className="card p-6 text-center">
-            <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mx-auto mb-4">
-              <Users className="w-6 h-6 text-purple-600 dark:text-purple-400" />
+            <div className="w-12 h-12 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <Users className="w-6 h-6 text-gray-600 dark:text-gray-400" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Impacto en tu Comunidad</h3>
             <p className="text-gray-600 dark:text-gray-300">Únete a eventos nacionales, apoya a otras mujeres y hombres, y participa en experiencias que generen un impacto positivo.</p>
           </div>
 
           <div className="card p-6 text-center">
-            <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mx-auto mb-4">
-              <Zap className="w-6 h-6 text-green-600 dark:text-green-400" />
+            <div className="w-12 h-12 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <Zap className="w-6 h-6 text-gray-600 dark:text-gray-400" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Contribuye a la Equidad</h3>
             <p className="text-gray-600 dark:text-gray-300">Ayuda a reducir las brechas de género y a crear un ecosistema más justo para todos.</p>
