@@ -1,6 +1,7 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { ThemeProvider } from './contexts/ThemeContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,6 +13,11 @@ export const metadata: Metadata = {
   robots: 'index, follow',
 }
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -20,9 +26,11 @@ export default function RootLayout({
   return (
     <html lang="es" className="scroll-smooth">
       <body className={`${inter.className} antialiased`}>
-        <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-          {children}
-        </div>
+        <ThemeProvider>
+          <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+            {children}
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   )

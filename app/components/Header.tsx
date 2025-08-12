@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, X, Heart, Github, Twitter } from 'lucide-react'
+import ThemeToggle from './ThemeToggle'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -27,8 +28,8 @@ export default function Header() {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center space-x-2"
           >
-            <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-              <Heart className="w-5 h-5 text-white" />
+            <div className="w-8 h-8 bg-black dark:bg-white rounded-lg flex items-center justify-center">
+              <Heart className="w-5 h-5 text-white dark:text-gray-900" />
             </div>
             <span className="text-xl font-bold gradient-text">AUNA</span>
           </motion.div>
@@ -49,7 +50,7 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Social Links */}
+          {/* Social Links and Theme Toggle */}
           <div className="hidden md:flex items-center space-x-4">
             <motion.a
               href="https://auna.cl"
@@ -70,6 +71,13 @@ export default function Header() {
             >
               <Twitter className="w-5 h-5" />
             </motion.a>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2 }}
+            >
+              <ThemeToggle />
+            </motion.div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -100,21 +108,24 @@ export default function Header() {
                   {item.name}
                 </a>
               ))}
-              <div className="flex space-x-4 pt-4">
-                <a
-                  href="https://auna.cl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors duration-200"
-                >
-                  <Github className="w-5 h-5" />
-                </a>
-                <a
-                  href="mailto:hola@auna.cl"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors duration-200"
-                >
-                  <Twitter className="w-5 h-5" />
-                </a>
+              <div className="flex items-center justify-between pt-4">
+                <div className="flex space-x-4">
+                  <a
+                    href="https://auna.cl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors duration-200"
+                  >
+                    <Github className="w-5 h-5" />
+                  </a>
+                  <a
+                    href="mailto:hola@auna.cl"
+                    className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors duration-200"
+                  >
+                    <Twitter className="w-5 h-5" />
+                  </a>
+                </div>
+                <ThemeToggle />
               </div>
             </nav>
           </motion.div>
