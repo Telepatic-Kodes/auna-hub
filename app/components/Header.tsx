@@ -10,12 +10,10 @@ export default function Header() {
 
   const navItems = [
     { name: 'Inicio', href: '#home' },
-    { name: 'Inspírate Mujer', href: '#inspirate' },
-    { name: 'Juntas Podemos', href: '#juntas-podemos' },
-    { name: 'Viajes con Propósito', href: '#viajes' },
-    { name: 'Intervención Territorial', href: '#intervencion' },
-    { name: 'Consultoría', href: '#consultoria' },
-    { name: 'Viste AÚNA', href: '#viste-auna' },
+    { name: 'Sobre AUNA', href: '#about' },
+    { name: 'Ecosistema', href: '#features' },
+    { name: 'Equipo', href: '#team' },
+    { name: 'Contacto', href: '#contact' },
   ]
 
   return (
