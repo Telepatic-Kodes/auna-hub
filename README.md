@@ -1,89 +1,95 @@
-# Auna Hub 🚀
+# AUNA - El movimiento que impulsa la equidad de género 🚀
 
-A modern, full-stack web application built with Next.js, React, TypeScript, and Tailwind CSS.
+Una aplicación web moderna que representa el movimiento AUNA, dedicado a impulsar la equidad de género a través de la unión de mujeres y hombres para la transformación social.
 
-## ✨ Features
+## ✨ Sobre AUNA
 
-- **Modern UI/UX** - Beautiful, responsive design with smooth animations
-- **TypeScript** - Full type safety and better developer experience
-- **Tailwind CSS** - Utility-first CSS framework for rapid development
-- **Framer Motion** - Smooth animations and transitions
-- **Next.js 14** - Latest React framework with App Router
-- **Responsive Design** - Works perfectly on all devices
+AUNA nace con el propósito de romper con la idea de la lucha solitaria desde las mujeres para avanzar hacia una sociedad con equidad de género, incorporando a los hombres, las familias y a todo el ecosistema que rodea a la mujer para realmente lograr permear la cultura y hacerles parte de una "causa colectiva" para un futuro más equitativo, colaborativo y empático.
 
-## 🛠️ Tech Stack
+## 🌟 Nuestros Pilares
+
+- **Inspírate Mujer** - Comunidad que activa liderazgo femenino
+- **Juntas Podemos** - Programa radial para familias
+- **Viajes con Propósito** - Experiencias para líderes organizacionales
+- **Consultoría a Empresas** - Cultura empresarial inclusiva
+- **Intervención Territorial** - Empoderamiento comunitario
+- **Viste AÚNA** - Conciencia visible y contagio cultural
+
+## 🛠️ Tecnologías
 
 - **Frontend**: Next.js 14, React 18, TypeScript
-- **Styling**: Tailwind CSS, Framer Motion
-- **Icons**: Lucide React
-- **Development**: ESLint, PostCSS, Autoprefixer
+- **Estilos**: Tailwind CSS, Framer Motion
+- **Iconos**: Lucide React
+- **Desarrollo**: ESLint, PostCSS, Autoprefixer
 
-## 🚀 Getting Started
+## 🚀 Inicio Rápido
 
-### Prerequisites
+### Prerrequisitos
 
 - Node.js 18+ 
-- npm or yarn
+- npm o yarn
 
-### Installation
+### Instalación
 
-1. Clone the repository:
+1. Clona el repositorio:
 ```bash
 git clone https://github.com/Telepatic-Kodes/auna-hub.git
 cd auna-hub
 ```
 
-2. Install dependencies:
+2. Instala las dependencias:
 ```bash
 npm install
 ```
 
-3. Run the development server:
+3. Ejecuta el servidor de desarrollo:
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-## 📁 Project Structure
+## 📁 Estructura del Proyecto
 
 ```
 auna-hub/
 ├── app/                 # Next.js App Router
-│   ├── components/      # Reusable components
-│   ├── globals.css      # Global styles
-│   ├── layout.tsx       # Root layout
-│   └── page.tsx         # Home page
-├── public/              # Static assets
-├── tailwind.config.js   # Tailwind configuration
-├── tsconfig.json        # TypeScript configuration
-└── package.json         # Dependencies and scripts
+│   ├── components/      # Componentes reutilizables
+│   ├── globals.css      # Estilos globales
+│   ├── layout.tsx       # Layout principal
+│   └── page.tsx         # Página principal
+├── public/              # Assets estáticos
+├── tailwind.config.js   # Configuración de Tailwind
+├── tsconfig.json        # Configuración de TypeScript
+└── package.json         # Dependencias y scripts
 ```
 
-## 🎨 Available Scripts
+## 🎨 Scripts Disponibles
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-- `npm run type-check` - Run TypeScript type checking
+- `npm run dev` - Inicia el servidor de desarrollo
+- `npm run build` - Construye para producción
+- `npm run start` - Inicia el servidor de producción
+- `npm run lint` - Ejecuta ESLint
+- `npm run type-check` - Verifica tipos de TypeScript
 
-## 🤝 Contributing
+## 🤝 Contribuir
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. Haz fork del repositorio
+2. Crea tu rama de características (`git checkout -b feature/amazing-feature`)
+3. Commit tus cambios (`git commit -m 'Add some amazing feature'`)
+4. Push a la rama (`git push origin feature/amazing-feature`)
+5. Abre un Pull Request
 
-## 📄 License
+## 📄 Licencia
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
 
-## 👨‍💻 Author
+## 👥 Equipo
 
-**Telepatic-Kodes**
+**AUNA** - El movimiento que impulsa la equidad de género
+
+**Desarrollado por**: [AIAIAI Consulting](https://aiaiai.consulting)
 
 ---
 
-Made with ❤️ for the Auna community
+Hecho con ❤️ para la comunidad AUNA

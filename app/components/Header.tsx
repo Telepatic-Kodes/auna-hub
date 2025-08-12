@@ -2,16 +2,19 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Menu, X, Zap, Github, Twitter } from 'lucide-react'
+import { Menu, X, Heart, Github, Twitter } from 'lucide-react'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Features', href: '#features' },
-    { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Inicio', href: '#home' },
+    { name: 'Inspírate Mujer', href: '#inspirate' },
+    { name: 'Juntas Podemos', href: '#juntas-podemos' },
+    { name: 'Viajes con Propósito', href: '#viajes' },
+    { name: 'Intervención Territorial', href: '#intervencion' },
+    { name: 'Consultoría', href: '#consultoria' },
+    { name: 'Viste AÚNA', href: '#viste-auna' },
   ]
 
   return (
@@ -24,14 +27,14 @@ export default function Header() {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center space-x-2"
           >
-            <div className="w-8 h-8 bg-gradient-to-r from-primary-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <Zap className="w-5 h-5 text-white" />
+            <div className="w-8 h-8 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg flex items-center justify-center">
+              <Heart className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold gradient-text">Auna Hub</span>
+            <span className="text-xl font-bold gradient-text">AUNA</span>
           </motion.div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6">
             {navItems.map((item, index) => (
               <motion.a
                 key={item.name}
@@ -39,7 +42,7 @@ export default function Header() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
+                className="text-gray-700 hover:text-pink-600 dark:text-gray-300 dark:hover:text-pink-400 transition-colors duration-200 font-medium text-sm"
               >
                 {item.name}
               </motion.a>
@@ -49,7 +52,7 @@ export default function Header() {
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
             <motion.a
-              href="https://github.com/Telepatic-Kodes/auna-hub"
+              href="https://auna.cl"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -59,7 +62,7 @@ export default function Header() {
               <Github className="w-5 h-5" />
             </motion.a>
             <motion.a
-              href="#"
+              href="mailto:hola@auna.cl"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.1 }}
@@ -72,7 +75,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-lg text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors duration-200"
+            className="lg:hidden p-2 rounded-lg text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors duration-200"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -84,7 +87,7 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden py-4 border-t border-gray-200 dark:border-gray-700"
+            className="lg:hidden py-4 border-t border-gray-200 dark:border-gray-700"
           >
             <nav className="flex flex-col space-y-4">
               {navItems.map((item) => (
@@ -92,14 +95,14 @@ export default function Header() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
+                  className="text-gray-700 hover:text-pink-600 dark:text-gray-300 dark:hover:text-pink-400 transition-colors duration-200 font-medium"
                 >
                   {item.name}
                 </a>
               ))}
               <div className="flex space-x-4 pt-4">
                 <a
-                  href="https://github.com/Telepatic-Kodes/auna-hub"
+                  href="https://auna.cl"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors duration-200"
@@ -107,7 +110,7 @@ export default function Header() {
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="mailto:hola@auna.cl"
                   className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors duration-200"
                 >
                   <Twitter className="w-5 h-5" />

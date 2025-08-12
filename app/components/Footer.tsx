@@ -1,43 +1,45 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Github, Twitter, Linkedin, Mail, Zap } from 'lucide-react'
+import { Github, Twitter, Linkedin, Mail, Heart } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const footerLinks = {
-    product: [
-      { name: 'Features', href: '#features' },
-      { name: 'Pricing', href: '#pricing' },
-      { name: 'Documentation', href: '#docs' },
-      { name: 'API', href: '#api' },
+    programas: [
+      { name: 'Inspírate Mujer', href: '#inspirate' },
+      { name: 'Juntas Podemos', href: '#juntas-podemos' },
+      { name: 'Viajes con Propósito', href: '#viajes' },
+      { name: 'Intervención Territorial', href: '#intervencion' },
+      { name: 'Consultoría a Empresas', href: '#consultoria' },
+      { name: 'Viste AÚNA', href: '#viste-auna' },
     ],
-    company: [
-      { name: 'About', href: '#about' },
+    empresa: [
+      { name: 'Sobre AUNA', href: '#sobre-auna' },
+      { name: 'Nuestro Equipo', href: '#equipo' },
+      { name: 'Directorio', href: '#directorio' },
+      { name: 'Contacto', href: '#contacto' },
+    ],
+    recursos: [
+      { name: 'Metodología LaTriada', href: '#metodologia' },
+      { name: 'Impacto Social', href: '#impacto' },
+      { name: 'Eventos', href: '#eventos' },
       { name: 'Blog', href: '#blog' },
-      { name: 'Careers', href: '#careers' },
-      { name: 'Contact', href: '#contact' },
-    ],
-    support: [
-      { name: 'Help Center', href: '#help' },
-      { name: 'Community', href: '#community' },
-      { name: 'Status', href: '#status' },
-      { name: 'Security', href: '#security' },
     ],
     legal: [
-      { name: 'Privacy Policy', href: '#privacy' },
-      { name: 'Terms of Service', href: '#terms' },
-      { name: 'Cookie Policy', href: '#cookies' },
-      { name: 'GDPR', href: '#gdpr' },
+      { name: 'Política de Privacidad', href: '#privacy' },
+      { name: 'Términos de Servicio', href: '#terms' },
+      { name: 'Cookies', href: '#cookies' },
+      { name: 'Transparencia', href: '#transparencia' },
     ],
   }
 
   const socialLinks = [
-    { name: 'GitHub', href: 'https://github.com/Telepatic-Kodes/auna-hub', icon: Github },
-    { name: 'Twitter', href: '#', icon: Twitter },
+    { name: 'Sitio Web', href: 'https://auna.cl', icon: Github },
+    { name: 'Email', href: 'mailto:hola@auna.cl', icon: Mail },
     { name: 'LinkedIn', href: '#', icon: Linkedin },
-    { name: 'Email', href: 'mailto:contact@aunahub.com', icon: Mail },
+    { name: 'Twitter', href: '#', icon: Twitter },
   ]
 
   return (
@@ -53,13 +55,13 @@ export default function Footer() {
             className="lg:col-span-1"
           >
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-r from-primary-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <Zap className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg flex items-center justify-center">
+                <Heart className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold">Auna Hub</span>
+              <span className="text-xl font-bold">AUNA</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Building the future of web development with modern technologies and beautiful design.
+              El movimiento que impulsa la equidad de género a través de la unión de mujeres y hombres para la transformación social.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -80,16 +82,16 @@ export default function Footer() {
             </div>
           </motion.div>
 
-          {/* Product Links */}
+          {/* Programas Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-lg font-semibold mb-4">Product</h3>
+            <h3 className="text-lg font-semibold mb-4">Programas</h3>
             <ul className="space-y-3">
-              {footerLinks.product.map((link) => (
+              {footerLinks.programas.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
@@ -102,16 +104,16 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* Company Links */}
+          {/* Empresa Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-lg font-semibold mb-4">Company</h3>
+            <h3 className="text-lg font-semibold mb-4">Empresa</h3>
             <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
+              {footerLinks.empresa.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
@@ -124,16 +126,16 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* Support Links */}
+          {/* Recursos Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-lg font-semibold mb-4">Support</h3>
+            <h3 className="text-lg font-semibold mb-4">Recursos</h3>
             <ul className="space-y-3">
-              {footerLinks.support.map((link) => (
+              {footerLinks.recursos.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
@@ -178,10 +180,10 @@ export default function Footer() {
           className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
           <p className="text-gray-400 text-sm">
-            © {currentYear} Auna Hub. All rights reserved.
+            © {currentYear} AUNA. Todos los derechos reservados.
           </p>
           <p className="text-gray-400 text-sm mt-4 md:mt-0">
-            Made with ❤️ by Telepatic-Kodes
+            Desarrollado por <a href="https://aiaiai.consulting" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:text-pink-300">AIAIAI Consulting</a> 2025
           </p>
         </motion.div>
       </div>

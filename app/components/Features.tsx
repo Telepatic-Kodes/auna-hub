@@ -1,55 +1,61 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Code, Smartphone, Zap, Shield, Palette, Globe } from 'lucide-react'
+import { Heart, Radio, Plane, Building, MapPin, Shirt, Users, Target, Globe } from 'lucide-react'
 
 export default function Features() {
   const features = [
     {
-      icon: Code,
-      title: 'TypeScript Support',
-      description: 'Full TypeScript support for better development experience and type safety.',
-      color: 'primary'
+      icon: Heart,
+      title: 'Comunidad Inspírate Mujer',
+      description: 'Activa un efecto multiplicador de liderazgo femenino y libertad interior desde la sororidad.',
+      color: 'pink',
+      target: 'Mujeres'
     },
     {
-      icon: Smartphone,
-      title: 'Responsive Design',
-      description: 'Perfectly responsive design that works beautifully on all devices and screen sizes.',
-      color: 'purple'
+      icon: Radio,
+      title: 'Programa radial "Juntas Podemos"',
+      description: 'Fortalece el sentido de comunidad, llega donde no llega lo digital, e inspira transformación intergeneracional.',
+      color: 'purple',
+      target: 'Mujeres y sus familias en todo el territorio nacional'
     },
     {
-      icon: Zap,
-      title: 'Performance Optimized',
-      description: 'Built with performance in mind using Next.js 14 and modern optimization techniques.',
-      color: 'green'
+      icon: Plane,
+      title: 'Viajes con Propósito',
+      description: 'Aumenta el grado de conocimiento y conciencia de los caminos que pueden tomar para impactar positivamente la calidad de vida de millones de familias.',
+      color: 'blue',
+      target: 'Líderes Organizacionales'
     },
     {
-      icon: Shield,
-      title: 'Security First',
-      description: 'Enterprise-grade security with best practices and modern authentication.',
-      color: 'red'
+      icon: Building,
+      title: 'Consultoría a Empresas',
+      description: 'Visibiliza desigualdades normalizadas y promueve una cultura empresarial inclusiva y corresponsable.',
+      color: 'green',
+      target: 'Colaboradoras/es'
     },
     {
-      icon: Palette,
-      title: 'Customizable UI',
-      description: 'Highly customizable UI components with Tailwind CSS and design system.',
-      color: 'yellow'
+      icon: MapPin,
+      title: 'Intervención Territorial',
+      description: 'Empodera económicamente y culturalmente a mujeres líderes que transforman creencias y estructuras sociales.',
+      color: 'orange',
+      target: 'Comunidades'
     },
     {
-      icon: Globe,
-      title: 'Global Ready',
-      description: 'Internationalization support and global deployment capabilities.',
-      color: 'blue'
+      icon: Shirt,
+      title: 'Viste AÚNA',
+      description: 'Genera conciencia visible, conversaciones valientes y un contagio cultural a favor de la equidad de género.',
+      color: 'red',
+      target: 'Ciudadanía comprometida con la transformación cultural'
     }
   ]
 
   const colorClasses = {
-    primary: 'bg-primary-100 text-primary-600 dark:bg-primary-900 dark:text-primary-400',
+    pink: 'bg-pink-100 text-pink-600 dark:bg-pink-900 dark:text-pink-400',
     purple: 'bg-purple-100 text-purple-600 dark:bg-purple-900 dark:text-purple-400',
+    blue: 'bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-400',
     green: 'bg-green-100 text-green-600 dark:bg-green-900 dark:text-green-400',
-    red: 'bg-red-100 text-red-600 dark:bg-red-900 dark:text-red-400',
-    yellow: 'bg-yellow-100 text-yellow-600 dark:bg-yellow-900 dark:text-yellow-400',
-    blue: 'bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-400'
+    orange: 'bg-orange-100 text-orange-600 dark:bg-orange-900 dark:text-orange-400',
+    red: 'bg-red-100 text-red-600 dark:bg-red-900 dark:text-red-400'
   }
 
   return (
@@ -63,10 +69,12 @@ export default function Features() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Powerful Features
+            ECOSISTEMA AÚNA
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Everything you need to build modern, scalable web applications with the latest technologies.
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
+            Nuestro ecosistema está compuesto por diversos pilares que tocan diferentes ámbitos de la sociedad, 
+            expandiendo así nuestro propósito común. Te animamos a involucrarte en esta causa de justicia social 
+            según tu propio contexto e intereses. ¡Tienes 6 caminos para unirte!
           </p>
         </motion.div>
 
@@ -86,9 +94,14 @@ export default function Features() {
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
                 {feature.description}
               </p>
+              <div className="flex items-center space-x-2 text-sm text-gray-500 dark:text-gray-400">
+                <Target className="w-4 h-4" />
+                <span className="font-medium">Capa Social:</span>
+                <span>{feature.target}</span>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -102,13 +115,14 @@ export default function Features() {
         >
           <div className="card p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              Ready to Get Started?
+              ¡AÚNATE!
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Join thousands of developers building amazing applications with Auna Hub.
+              La verdadera transformación comienza cuando nos unimos. 
+              Únete a miles de personas que ya están construyendo un futuro más equitativo con AUNA.
             </p>
             <button className="btn-primary px-8 py-3 text-lg">
-              Start Building Now
+              Únete al Movimiento
             </button>
           </div>
         </motion.div>
